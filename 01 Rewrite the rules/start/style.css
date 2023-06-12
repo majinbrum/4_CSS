@@ -1,0 +1,16 @@
+:root {
+  --1u: 100px;
+  --orange: #ff8800;
+  --black: #011212;
+}
+
+body {
+  background-color: var(--black);
+}
+
+.ball {
+  width: var(--1u);
+  height: var(--1u);
+  background-color: var(--orange);
+  border-radius: calc(var(--1u) / 2);
+}

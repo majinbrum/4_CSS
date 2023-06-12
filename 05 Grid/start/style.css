@@ -1,0 +1,48 @@
+div {
+  background-color: lightgray;
+  /* width: 100px;
+  height: 75px; */
+  border: 1px solid gray;
+  font-size: 24px;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 75px;
+}
+
+#total {
+  background-color: rgb(53, 60, 83);
+  color: white;
+  font-weight: bold;
+  grid-column: span 4;
+  border-radius: 20px 20px 0 0;
+  text-align: end;
+  padding-right: 20px;
+}
+
+#result {
+  background-color: rgb(252, 97, 110);
+  grid-row: span 4;
+  line-height: 300px;
+  border-radius: 0 0 20px 0;
+}
+
+#plus,
+#min,
+#for,
+#divide {
+  background-color: lightblue;
+}
+
+section.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid div {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+#zero {
+  border-radius: 0 0 0 20px;
+}

@@ -1,0 +1,39 @@
+@media (max-width: 768px) {
+  nav * {
+    display: block;
+  }
+
+  nav {
+    padding: 20px 0 0 12px;
+    width: 150px;
+    height: 100vh;
+    background-color: #212529;
+    color: white;
+  }
+
+  nav h3 {
+    margin-top: 0;
+  }
+
+  ul {
+    padding: 0 0 0 12px;
+  }
+
+  #search-bar,
+  #search-button {
+    display: inline-block;
+  }
+
+  #search-bar {
+    width: 100px;
+  }
+
+  #search-button {
+    display: none;
+  }
+
+  #search {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}

@@ -1,0 +1,115 @@
+/* Try to replicate the layout displayed in asset/cards-desktop.jpg, 
+cards-mobile.jpg (max-width: 375px), 
+cards-tablet.jpg (max-width: 768px). 
+The created page should be responsive, both for the tablet view (`&#40;max-width: 768px&#41`) 
+and mobile view (`&#40;max-width: 375px&#41`) */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  align-items: center;
+  margin: 20px;
+}
+
+.head {
+  background-color: rgb(192, 196, 194);
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.head figure {
+  display: flex;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.info {
+  padding-left: 10px;
+}
+
+.username {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.date {
+  font-size: 12px;
+  font-weight: 300;
+  color: white;
+}
+
+.post {
+  background-color: rgb(224, 226, 225);
+  border-radius: 0 0 20px 20px;
+}
+
+.post figure {
+  max-width: 400px;
+}
+
+.posted-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reactions {
+  padding: 20px 20px 5px;
+}
+
+/* <style> for google fonts icons
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+</style> */
+
+.material-symbols-outlined:hover {
+  font-variation-settings: "FILL" 1;
+}
+
+.description {
+  padding: 5px 20px 20px;
+  font-size: 12px;
+  max-width: 50ch;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: fit-content;
+  }
+}
+
+/* mobile */
+@media (max-width: 375px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: fit-content;
+  }
+}
